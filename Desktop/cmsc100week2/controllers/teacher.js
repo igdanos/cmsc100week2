@@ -3,5 +3,5 @@ exports.find = function(req,res){
 };
 
 exports.add = function(req,res){
-       res.send('Bawal Prerog');
+       res.send('BAWAL ANG PREROG... GRADUATING LANG!');
 };
