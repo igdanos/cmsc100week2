@@ -1,0 +1,16 @@
+//pag pumasok siya sa local host na may request na get, magrerespond siya with 'Hello World'
+
+app.get('/',function(req,res){
+       res.send('Hello World!');
+});
+
+//CHAINABLE ROUTES
+
+app.route()
+
+app.route('/students')
+     .get(function(req,res){
+     res.send('Get a student');
+     })
+     
+     .post 
