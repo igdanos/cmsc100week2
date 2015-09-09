@@ -43,6 +43,9 @@ describe('student',function(){
 			.end(function(err,res){
 				if(err) throw err;
 				res.should.have.status(200);
+				res.body.should.be.an.instanceOf(Object);
+				res.body.should.have.property('name'); //UNSURE IF SYNTAX CORRECT
+				res.body.name.should.be.a.Number; //UNSURE IF SYNTAX CORRECT
 				done();
 			});
 		});
