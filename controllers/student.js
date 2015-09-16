@@ -28,7 +28,8 @@ exports.findOne = function (req,res,next) {
 
 exports.insert = function(req,res,next){
 
-    console.log(req.ip + "find()");
+
+    console.log(req.body);
 
     db.query("INSERT INTO student(studno,name) VALUES(?,?)",
     [req.body.studno,req.body.name],

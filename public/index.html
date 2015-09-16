@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!--document type-->
+<html>
+	
+	<head>
+		<title> HTML5 Discussion </title>     <!--what you see in browser tabs-->
+		<meta charset="utf-8">      <!--default - supports special characters-->
+	</head>
+	
+	<body>
+		
+		<form method="POST" action="http://localhost:5000/students">	
+			
+			<input type="text" name="studno" placeholder="Student Number" pattern="^[0-9]{4}-[0-9]{5}$" required="" disabled="" /> <br/>
+
+			<input type="text" name="name" placeholder="Name"> <br/>
+			
+			<input type="submit" value="Create"/>
+
+			<!--
+			<input type="color">
+			<input type="=email">
+			<input type="date">
+			<input type="number">
+			<input type="range">
+			-->
+		
+		</form>
+
+	</body>
+
+</html>

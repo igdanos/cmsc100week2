@@ -16,6 +16,8 @@ app.get('/students',function(req,res){ //can be accessed in localhost:5000/stude
 app.use(require('body-parser')()); //used to accept inputs from the USER
 app.use(require('method-override')()); //enables the HTTP Methods: PUT and DELETE methods
 app.use(require(__dirname+'/config/router')(express.Router())); //__dirname -- denotes the location of the app you're running
+app.use(express.static(__dirname+'/public')); //connect to HTML5
+
 
 var server = app.listen(5000,function(){ //listen method -- listens to the local host with port number 5000
        var host = server.address().address;
